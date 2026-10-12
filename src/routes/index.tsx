@@ -81,7 +81,7 @@ function Index() {
       </section>
 
       <section className="px-6 py-24">
-        <div className="mx-auto grid max-w-5xl items-center gap-12 md:grid-cols-[280px,1fr]">
+        <div className="mx-auto grid max-w-5xl items-center gap-12 md:grid-cols-[280px_1fr]">
           {/* PLACEHOLDER FOTO HASAN — ganti blok ini dengan <img src="..." /> saat foto asli sudah ada */}
           <div className="mx-auto w-full max-w-[280px]">
             <div className="relative flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-primary/40 bg-card">
