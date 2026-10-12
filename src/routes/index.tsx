@@ -25,12 +25,36 @@ const CV_LINK = "#"; // TODO: ganti dengan link file CV (mis. Google Drive)
 
 // Ganti `url` dengan link YouTube/Vimeo, dan `thumb` dengan URL gambar thumbnail
 const projects = [
-  { title: "Cinematic Travel Film", desc: "Film perjalanan dengan color grading sinematik.", url: "https://youtube.com", thumb: "" },
-  { title: "Commercial Product Ad", desc: "Iklan produk dengan motion graphics After Effects.", url: "https://youtube.com", thumb: "" },
-  { title: "Wedding Highlight", desc: "Momen pernikahan dalam cerita visual yang emosional.", url: "https://youtube.com", thumb: "" },
-  { title: "Music Video", desc: "Editing ritmis dan efek visual kreatif.", url: "https://vimeo.com", thumb: "" },
-  { title: "3D Logo Animation", desc: "Animasi logo 3D dibuat dengan Blender.", url: "https://vimeo.com", thumb: "" },
-  { title: "Social Media Reels", desc: "Konten vertikal singkat untuk Instagram & TikTok.", url: "https://instagram.com", thumb: "" },
+  {
+    title: "Bumper",
+    desc: "Bumper pembuka dengan ritme cepat dan transisi dinamis — perkenalan brand dalam hitungan detik.",
+    url: "https://youtu.be/XVD6M0jmLyI?si=5QNBEId25NsXksc7",
+    thumb: "https://i.ytimg.com/vi/XVD6M0jmLyI/mqdefault.jpg",
+  },
+  {
+    title: "Pernah Ikut Kompetisi Video",
+    desc: "Karya yang diikutkan dalam kompetisi video — storytelling dan color grading menjadi andalan.",
+    url: "https://youtu.be/QIWAQAhRRpw?si=ILq6tQ68VMAHu3vu",
+    thumb: "https://i.ytimg.com/vi/QIWAQAhRRpw/mqdefault.jpg",
+  },
+  {
+    title: "Terus Belajar & Mensyukuri Hidup",
+    desc: "Film pendek personal tentang perjalanan belajar dan mensyukuri setiap momen dalam hidup.",
+    url: "https://youtu.be/u5V09Xt5S30?si=HR1vnsTIdzHMiP5c",
+    thumb: "https://i.ytimg.com/vi/u5V09Xt5S30/mqdefault.jpg",
+  },
+  {
+    title: "Kompetisi Asian Games 2018",
+    desc: "Video lomba merayakan Asian Games 2018 — energi pertandingan dikemas dalam format vertikal (Shorts).",
+    url: "https://youtube.com/shorts/Nq4fo9QRUXc?si=MnSlwjI4eqYx03Rz",
+    thumb: "https://i.ytimg.com/vi/Nq4fo9QRUXc/mqdefault.jpg",
+  },
+  {
+    title: "Shorts Pilihan",
+    desc: "Konten vertikal singkat untuk YouTube Shorts — momen singkat yang dikemas apik.",
+    url: "https://youtube.com/shorts/IXkLjgJOTPI?si=lfATvaAOkaUu6eCP",
+    thumb: "", // video ini saat ini dihapus dari YouTube, jadi thumbnail belum tersedia
+  },
 ];
 const skills = ["Adobe Premiere", "CapCut", "Canva", "3D Blender", "After Effects"];
 
@@ -57,13 +81,22 @@ function Index() {
       </section>
 
       <section className="px-6 py-24">
-        <div className="mx-auto grid max-w-5xl gap-12 md:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl items-center gap-12 md:grid-cols-[280px_1fr]">
+          {/* PLACEHOLDER FOTO HASAN — ganti blok ini dengan <img src="..." /> saat foto asli sudah ada */}
+          <div className="mx-auto w-full max-w-[280px]">
+            <div className="relative flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-primary/40 bg-card">
+              <span className="absolute inset-0 bg-hero opacity-40" />
+              <div className="relative flex flex-col items-center gap-3 text-center">
+                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/15 text-3xl text-primary">👤</span>
+                <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Foto Hasanudin</span>
+                <span className="max-w-[180px] text-xs text-muted-foreground">Placeholder — ganti dengan foto asli</span>
+              </div>
+            </div>
+          </div>
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">Tentang Saya</p>
             <h2 className="mt-3 text-4xl font-bold">Bercerita lewat lensa & timeline.</h2>
-          </div>
-          <div>
-            <p className="text-muted-foreground">
+            <p className="mt-6 text-muted-foreground">
               Saya Hasanudin, videografer dan editor video yang berfokus pada storytelling visual. Berpengalaman menangani
               konten komersial, dokumenter, event, hingga media sosial — dari pengambilan gambar, editing, color grading,
               sampai motion graphics dan animasi 3D.
