@@ -25,12 +25,36 @@ const CV_LINK = "#"; // TODO: ganti dengan link file CV (mis. Google Drive)
 
 // Ganti `url` dengan link YouTube/Vimeo, dan `thumb` dengan URL gambar thumbnail
 const projects = [
-  { title: "Cinematic Travel Film", desc: "Film perjalanan dengan color grading sinematik.", url: "https://youtube.com", thumb: "" },
-  { title: "Commercial Product Ad", desc: "Iklan produk dengan motion graphics After Effects.", url: "https://youtube.com", thumb: "" },
-  { title: "Wedding Highlight", desc: "Momen pernikahan dalam cerita visual yang emosional.", url: "https://youtube.com", thumb: "" },
-  { title: "Music Video", desc: "Editing ritmis dan efek visual kreatif.", url: "https://vimeo.com", thumb: "" },
-  { title: "3D Logo Animation", desc: "Animasi logo 3D dibuat dengan Blender.", url: "https://vimeo.com", thumb: "" },
-  { title: "Social Media Reels", desc: "Konten vertikal singkat untuk Instagram & TikTok.", url: "https://instagram.com", thumb: "" },
+  {
+    title: "Bumper",
+    desc: "Bumper pembuka dengan ritme cepat dan transisi dinamis — perkenalan brand dalam hitungan detik.",
+    url: "https://youtu.be/XVD6M0jmLyI?si=5QNBEId25NsXksc7",
+    thumb: "https://i.ytimg.com/vi/XVD6M0jmLyI/mqdefault.jpg",
+  },
+  {
+    title: "Pernah Ikut Kompetisi Video",
+    desc: "Karya yang diikutkan dalam kompetisi video — storytelling dan color grading menjadi andalan.",
+    url: "https://youtu.be/QIWAQAhRRpw?si=ILq6tQ68VMAHu3vu",
+    thumb: "https://i.ytimg.com/vi/QIWAQAhRRpw/mqdefault.jpg",
+  },
+  {
+    title: "Terus Belajar & Mensyukuri Hidup",
+    desc: "Film pendek personal tentang perjalanan belajar dan mensyukuri setiap momen dalam hidup.",
+    url: "https://youtu.be/u5V09Xt5S30?si=HR1vnsTIdzHMiP5c",
+    thumb: "https://i.ytimg.com/vi/u5V09Xt5S30/mqdefault.jpg",
+  },
+  {
+    title: "Kompetisi Asian Games 2018",
+    desc: "Video lomba merayakan Asian Games 2018 — energi pertandingan dikemas dalam format vertikal (Shorts).",
+    url: "https://youtube.com/shorts/Nq4fo9QRUXc?si=MnSlwjI4eqYx03Rz",
+    thumb: "https://i.ytimg.com/vi/Nq4fo9QRUXc/mqdefault.jpg",
+  },
+  {
+    title: "Shorts Pilihan",
+    desc: "Konten vertikal singkat untuk YouTube Shorts — momen singkat yang dikemas apik.",
+    url: "https://youtube.com/shorts/IXkLjgJOTPI?si=lfATvaAOkaUu6eCP",
+    thumb: "", // video ini saat ini dihapus dari YouTube, jadi thumbnail belum tersedia
+  },
 ];
 const skills = ["Adobe Premiere", "CapCut", "Canva", "3D Blender", "After Effects"];
 
