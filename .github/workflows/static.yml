@@ -22,22 +22,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Proyek ini memakai bun.lock, jadi instal & build pakai Bun
+      # (npm install gagal dengan error "edgesOut")
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      # Tidak ada package-lock.json, jadi pakai npm install (bukan npm ci)
       - name: Install dependencies
-        run: npm install
+        run: bun install
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Build site
-        run: npm run build
+        run: bun run build
 
-      # Cari folder hasil build yang berisi index.html
+      # Halaman jadi ada di dist/client
       - name: Find static output
         run: |
           for d in dist/client .output/public dist; do
@@ -45,7 +51,7 @@ jobs:
               echo "SITE_DIR=$d" >> "$GITHUB_ENV"; exit 0
             fi
           done
-          echo "index.html tidak ditemukan"; find . -name index.html -not -path "./node_modules/*"; exit 1
+          echo "index.html tidak ditemukan"; exit 1
 
       - name: SPA fallback & nojekyll
         run: |
