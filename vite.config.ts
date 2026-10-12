@@ -1,7 +1,7 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// Base URL untuk GitHub Pages (repo: projecthasan/portohasan.github.io).
-const base = "/projecthasan/portohasan.github.io";
+// Base URL untuk GitHub Pages (repo: portohasan.github.io).
+const base = "/portohasan.github.io/";
 
 export default defineConfig({
   vite: {
