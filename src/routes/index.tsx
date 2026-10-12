@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import hasanudinPhoto from "@/assets/hasanudin.png.asset.json";
-import cvFile from "@/assets/cv-hasan.pdf.asset.json";
+// File foto & CV disimpan di folder public/assets (ikut ter-deploy ke GitHub Pages)
+const BASE = import.meta.env.BASE_URL;
+const PHOTO_URL = `${BASE}assets/hasanudin.png`;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,7 +24,7 @@ const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
 )}`;
 const IG_LINK = "https://instagram.com/hasnud__?utm_source=qr&cplk=a2g3NTZsdzd3bWpn";
 const EMAIL_LINK = "mailto:hasanudin251198@gmail.com";
-const CV_LINK = cvFile.url; // file CV, otomatis terunduh lewat atribut download
+const CV_LINK = `${BASE}assets/CV-hasan.pdf`; // file CV, otomatis terunduh lewat atribut download
 
 // Ganti `url` dengan link YouTube/Vimeo, dan `thumb` dengan URL gambar thumbnail
 const projects = [
@@ -87,7 +88,7 @@ function Index() {
           {/* Foto Hasanudin */}
           <div className="mx-auto w-full max-w-[280px]">
             <div className="relative overflow-hidden rounded-2xl border border-primary/30 bg-card shadow-glow">
-              <img src={hasanudinPhoto.url} alt="Hasanudin, videografer & video editor"
+              <img src={PHOTO_URL} alt="Hasanudin, videografer & video editor"
                 className="aspect-[3/4] w-full object-cover" loading="lazy" />
             </div>
           </div>
