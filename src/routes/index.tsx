@@ -52,7 +52,7 @@ const projects = [
   },
   {
     title: "Senja",
-    desc: "Shorts vertikal bertema senja — cahaya keemasan dan transisi halus yang merangkum suasana dalam hitungan detik.",
+    desc: "Shorts bertema senja dengan warna pudar dan lapisan bayangan ukiran — suasana sendu yang dibangun lewat cahaya lembut dan transisi halus.",
     url: "https://youtube.com/shorts/krfUeRg5u-4?si=p4RFZRC7kckbPQts",
     thumb: "https://i.ytimg.com/vi/krfUeRg5u-4/oardefault.jpg",
   },
