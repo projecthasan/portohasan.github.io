@@ -104,8 +104,8 @@ function Index() {
                 <span key={s} className="rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">{s}</span>
               ))}
             </div>
-            {/* Ganti CV_LINK di atas dengan link CV */}
-            <a href={CV_LINK} target="_blank" rel="noopener noreferrer" className={`${primary} mt-8`}>Download CV</a>
+            {/* Tombol CV: file otomatis terunduh saat diklik */}
+            <a href={CV_LINK} download="CV-Hasanudin.pdf" className={`${primary} mt-8`}>Download CV</a>
           </div>
         </div>
       </section>
