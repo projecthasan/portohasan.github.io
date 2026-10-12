@@ -1,10 +1,9 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-const repository = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
-const base =
-  process.env.GITHUB_ACTIONS && repository && !repository.endsWith(".github.io")
-    ? `/${repository}/`
-    : "/";
+// GitHub Pages: repository "portohasan.github.io" adalah user/organization site,
+// sehingga situs dilayani di root domain (https://portohasan.github.io/).
+// Karena itu base URL = "/". (Jika nama repo lain, misal "porto", ganti jadi "/porto/".)
+const base = "/";
 
 export default defineConfig({
   vite: {
