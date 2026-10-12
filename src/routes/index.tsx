@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import hasanudinPhoto from "@/assets/hasanudin.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -50,10 +51,10 @@ const projects = [
     thumb: "https://i.ytimg.com/vi/Nq4fo9QRUXc/mqdefault.jpg",
   },
   {
-    title: "Shorts Pilihan",
-    desc: "Konten vertikal singkat untuk YouTube Shorts — momen singkat yang dikemas apik.",
-    url: "https://youtube.com/shorts/IXkLjgJOTPI?si=lfATvaAOkaUu6eCP",
-    thumb: "", // video ini saat ini dihapus dari YouTube, jadi thumbnail belum tersedia
+    title: "Senja",
+    desc: "Shorts bertema senja dengan warna pudar dan lapisan bayangan ukiran — suasana sendu yang dibangun lewat cahaya lembut dan transisi halus.",
+    url: "https://youtube.com/shorts/krfUeRg5u-4?si=p4RFZRC7kckbPQts",
+    thumb: "https://i.ytimg.com/vi/krfUeRg5u-4/oardefault.jpg",
   },
 ];
 const skills = ["Adobe Premiere", "CapCut", "Canva", "3D Blender", "After Effects"];
@@ -82,15 +83,11 @@ function Index() {
 
       <section className="px-6 py-24">
         <div className="mx-auto grid max-w-5xl items-center gap-12 md:grid-cols-[280px_1fr]">
-          {/* PLACEHOLDER FOTO HASAN — ganti blok ini dengan <img src="..." /> saat foto asli sudah ada */}
+          {/* Foto Hasanudin */}
           <div className="mx-auto w-full max-w-[280px]">
-            <div className="relative flex aspect-[3/4] items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-primary/40 bg-card">
-              <span className="absolute inset-0 bg-hero opacity-40" />
-              <div className="relative flex flex-col items-center gap-3 text-center">
-                <span className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/15 text-3xl text-primary">👤</span>
-                <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Foto Hasanudin</span>
-                <span className="max-w-[180px] text-xs text-muted-foreground">Placeholder — ganti dengan foto asli</span>
-              </div>
+            <div className="relative overflow-hidden rounded-2xl border border-primary/30 bg-card shadow-glow">
+              <img src={hasanudinPhoto.url} alt="Hasanudin, videografer & video editor"
+                className="aspect-[3/4] w-full object-cover" loading="lazy" />
             </div>
           </div>
           <div>
