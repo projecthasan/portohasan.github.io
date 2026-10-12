@@ -54,7 +54,7 @@ const projects = [
     title: "Senja",
     desc: "Shorts vertikal bertema senja — cahaya keemasan dan transisi halus yang merangkum suasana dalam hitungan detik.",
     url: "https://youtube.com/shorts/krfUeRg5u-4?si=p4RFZRC7kckbPQts",
-    thumb: "https://i.ytimg.com/vi/krfUeRg5u-4/hqdefault.jpg",
+    thumb: "https://i.ytimg.com/vi/krfUeRg5u-4/oardefault.jpg",
   },
 ];
 const skills = ["Adobe Premiere", "CapCut", "Canva", "3D Blender", "After Effects"];
