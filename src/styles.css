@@ -142,3 +142,22 @@
     color: var(--color-foreground);
   }
 }
+
+:root {
+  --background: oklch(0.13 0.005 60);
+  --foreground: oklch(0.97 0.005 80);
+  --card: oklch(0.18 0.006 60);
+  --card-foreground: oklch(0.97 0.005 80);
+  --primary: oklch(0.72 0.19 50);
+  --primary-foreground: oklch(0.15 0.01 60);
+  --secondary: oklch(0.22 0.006 60);
+  --secondary-foreground: oklch(0.97 0.005 80);
+  --muted: oklch(0.22 0.006 60);
+  --muted-foreground: oklch(0.68 0.01 70);
+  --border: oklch(1 0 0 / 10%);
+  --gradient-hero: radial-gradient(ellipse at 70% 20%, oklch(0.72 0.19 50 / 25%), transparent 60%);
+  --shadow-glow: 0 10px 40px -10px oklch(0.72 0.19 50 / 60%);
+}
+body { font-family: "Plus Jakarta Sans", sans-serif; }
+.bg-hero { background-image: var(--gradient-hero); }
+.shadow-glow { box-shadow: var(--shadow-glow); }
