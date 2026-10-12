@@ -23,7 +23,7 @@ const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
 )}`;
 const IG_LINK = "https://instagram.com/hasnud__?utm_source=qr&cplk=a2g3NTZsdzd3bWpn";
 const EMAIL_LINK = "mailto:hasanudin251198@gmail.com";
-const CV_LINK = "#"; // TODO: ganti dengan link file CV (mis. Google Drive)
+const CV_LINK = cvFile.url; // file CV, otomatis terunduh lewat atribut download
 
 // Ganti `url` dengan link YouTube/Vimeo, dan `thumb` dengan URL gambar thumbnail
 const projects = [
