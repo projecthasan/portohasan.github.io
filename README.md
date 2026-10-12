@@ -29,5 +29,5 @@ npm run dev
 The workflow at `.github/workflows/static.yml` builds the app and deploys the generated static output.
 In GitHub, open **Settings → Pages** and select **GitHub Actions** as the build and deployment source.
 
-### Important: local assets
-The files `src/assets/hasanudin.png.asset.json` and `src/assets/cv-hasan.pdf.asset.json` contain Lovable-hosted asset URLs, not the actual image/PDF files. GitHub Pages cannot serve those Lovable asset endpoints. To make the profile photo and CV download work on GitHub Pages, place the real files in `public/assets/` (for example `public/assets/hasanudin.png` and `public/assets/CV-hasan.pdf`) and update `src/routes/index.tsx` to use `/assets/hasanudin.png` and `/assets/CV-hasan.pdf` respectively.
+### Assets
+The profile photo and CV live in `public/assets/` and are deployed with the site. Base URL is `/` for the `portohasan.github.io` repository.
