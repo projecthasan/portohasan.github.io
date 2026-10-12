@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import hasanudinPhoto from "@/assets/hasanudin.png.asset.json";
+import cvFile from "@/assets/cv-hasan.pdf.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,7 +23,7 @@ const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
 )}`;
 const IG_LINK = "https://instagram.com/hasnud__?utm_source=qr&cplk=a2g3NTZsdzd3bWpn";
 const EMAIL_LINK = "mailto:hasanudin251198@gmail.com";
-const CV_LINK = "#"; // TODO: ganti dengan link file CV (mis. Google Drive)
+const CV_LINK = cvFile.url; // file CV, otomatis terunduh lewat atribut download
 
 // Ganti `url` dengan link YouTube/Vimeo, dan `thumb` dengan URL gambar thumbnail
 const projects = [
@@ -103,8 +104,8 @@ function Index() {
                 <span key={s} className="rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">{s}</span>
               ))}
             </div>
-            {/* Ganti CV_LINK di atas dengan link CV */}
-            <a href={CV_LINK} target="_blank" rel="noopener noreferrer" className={`${primary} mt-8`}>Download CV</a>
+            {/* Tombol CV: file otomatis terunduh saat diklik */}
+            <a href={CV_LINK} download="CV-Hasanudin.pdf" className={`${primary} mt-8`}>Download CV</a>
           </div>
         </div>
       </section>
